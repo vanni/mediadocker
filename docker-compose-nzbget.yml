@@ -14,4 +14,3 @@ services:
     ports:
       - 6789:6789
     restart: unless-stopped
-    
