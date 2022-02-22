@@ -1,4 +1,5 @@
 #!/bin/bash
+cd
 mkdir mydockers
 cd mydockers
 installApps()
