@@ -7,7 +7,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/London
+      - TZ=Australia/Brisbane
     volumes:
       - /path/to/data:/config
       - /path/to/downloads:/downloads #optional
