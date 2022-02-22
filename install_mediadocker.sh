@@ -115,24 +115,8 @@ startInstall()
             sudo apt install docker-compose -y >> ~/docker-script-install.log 2>&1
         fi
 
-        ######################################
-        ###        Install CentOS 7        ###
-        ######################################
-
-        if [[ "$OS" == "1" ]]; then
-            sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose >> ~/docker-script-install.log 2>&1
-
-            sudo chmod +x /usr/local/bin/docker-compose >> ~/docker-script-install.log 2>&1
-        fi
-
-        echo ""
-
-        echo "- Docker Compose Version is now: " 
-        docker-compose --version
-        echo ""
-        echo ""
-        sleep 3s
-    fi
+        
+   
 
     ##########################################
     #### Test if Docker Service is Running ###
