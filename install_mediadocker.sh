@@ -151,6 +151,7 @@ startInstall()
         # pull an nginx proxy manager docker-compose file from github
         echo "    1. Pulling a default NGinX Proxy Manager docker-compose.yml file."
 
+        cd mydockers
         mkdir nginx-proxy-manager
         cd nginx-proxy-manager
 
@@ -229,6 +230,7 @@ startInstall()
         echo ""
         echo "    1. Preparing to install Sonarr"
 
+        cd mydockers
         mkdir sonarr
         cd sonarr
 
@@ -262,6 +264,7 @@ startInstall()
         echo ""
         echo "    1. Preparing to install Radarr"
 
+        cd mydockers
         mkdir radarr
         cd radarr
 
@@ -296,6 +299,7 @@ startInstall()
         echo ""
         echo "    1. Preparing to install Nzbget"
 
+        cd mydockers
         mkdir nzbget
         cd nzbget
 
@@ -358,4 +362,3 @@ do
     *) echo "Invalid selection, please try again..." ;;
   esac
 done
-
